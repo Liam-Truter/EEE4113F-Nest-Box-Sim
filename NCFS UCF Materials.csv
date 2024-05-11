@@ -1,0 +1,12 @@
+Material,k,rho,cp
+Hardwood,0.16,720,1.255
+Oak,0.17,545,2.385
+Douglas Fir Plywood,0.12,550,1.2
+Fir LD,0.11,415,2.72
+Fir HD,0.12,600,2.72
+Particle Board,0.14,800,1.3
+Softwood,0.12,510,1.38
+Yellow Pine,0.15,640,2.805
+"Particleboard, HD",0.17,1000,1.3
+"Particleboard, LD",0.078,590,1.3
+Plywood,0.12,545,1.215

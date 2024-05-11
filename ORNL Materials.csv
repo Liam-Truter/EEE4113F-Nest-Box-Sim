@@ -1,0 +1,11 @@
+Material,k,rho,cp
+Oak,0.173,705,1.63
+Birch,0.172,705,1.63
+Maple,0.164,671,1.63
+Ash,0.159,643,1.63
+Southern Pine,0.153,615,1.63
+Douglas Fir,0.140,559,1.63
+Southern Cypress,0.131,509,1.63
+Hem-Fir,0.118,448,1.63
+Cedars,0.114,425,1.63
+California Redwood,0.113,420,1.63
