@@ -131,12 +131,12 @@ class Panel:
 
         # Fourth order Runge-Kutta
         k1 = self.rk_temperature_step(T, T_infinity, T_internal, q_solar)
-        #k2 = self.rk_temperature_step(T+dt*k1/2, T_infinity, T_internal, q_solar)
-        #k3 = self.rk_temperature_step(T+dt*k2/2, T_infinity, T_internal, q_solar)
-        #k4 = self.rk_temperature_step(T+dt*k3, T_infinity, T_internal, q_solar)
+        k2 = self.rk_temperature_step(T+dt*k1/2, T_infinity, T_internal, q_solar)
+        k3 = self.rk_temperature_step(T+dt*k2/2, T_infinity, T_internal, q_solar)
+        k4 = self.rk_temperature_step(T+dt*k3, T_infinity, T_internal, q_solar)
 
-        #dTdt = 1/6 * (k1 + 2*k2 + 2*k3 + k4)
-        dTdt = k1
+        dTdt = 1/6 * (k1 + 2*k2 + 2*k3 + k4)
+        #dTdt = k1
         T += dTdt*dt 
         # Update internal temperature
         self.T = T
